@@ -3,7 +3,7 @@ body {
 	padding : 0;
 	margin : 0;
 	font-family: "Open Sans", sans-serif;
-	font-size : 24px;
+	font-size : 18px;
 	font-weight : 100;
 	text-align: left;
 	line-height: 1.5;
@@ -83,8 +83,6 @@ li {
 
 img {
 	width: 100%;
-	boder : 1px solid #ddd;
-	bx-shadow: 3px 3px 3px #ddd;
 }
 
 iframe {
