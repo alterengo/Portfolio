@@ -16,7 +16,7 @@ body {
 }
 
 .full_height {
-	height : 100vh;
+	height : 92vh;
 }
 
 .content {
@@ -24,6 +24,8 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding-top : 6vh;
+	padding-bottom : 4vh;
 }
 
 .dark {
@@ -50,7 +52,6 @@ h1 {
 	font-family: 'Comfortaa', sans-serif;
 	font-size: 64px;
 	margin : 0;
-	margin-bottom: 5vh;
 	line-height: 1.3;
 }
 
@@ -91,8 +92,10 @@ iframe {
 }
 
 .entry {
-	padding-top : 8vh;
-	padding-bottom: 1vh;
+}
+
+.seperator {
+	margin-top: 4vh;
 }
 
 .inverted {
@@ -133,16 +136,17 @@ iframe {
 	}
 }
 
+@media (max-width: 720px)
+{
+	.full_height {
+		height : auto;
+	}
+}
+
 @media (max-width: 480px) 
 { 
 	.width_wrapper {
 		width : 94vw;
-	}
-
-	.full_height {
-		height : auto;
-		padding-top : 4vh;
-		padding-bottom : 4vh;
 	}
 
 	h1 {
