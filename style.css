@@ -7,8 +7,6 @@ body {
 	font-weight : 100;
 	text-align: left;
 	line-height: 1.5;
-	background-color: #EBEBEB;
-	color : #4F4F4F;
 }
 
 .width_wrapper {
@@ -53,12 +51,14 @@ h1 {
 	font-size: 64px;
 	margin : 0;
 	line-height: 1.3;
+
 }
 
 h2 {
 	font-family: 'Comfortaa', sans-serif;
 	font-size: 32px;
 	margin : 0;
+
 }
 
 h3 {
