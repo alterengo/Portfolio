@@ -9,6 +9,18 @@ body {
 	line-height: 1.5;
 }
 
+.stage {
+	background-image: url("images/markus-spiske-7ZBP2cFBooM-unsplash.jpg"); /* The image used */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.subheadline {
+	font-size:20px;
+	font-weight: 500;
+}
+
 .width_wrapper {
 	width : 50vw;
 }
@@ -87,6 +99,8 @@ li {
 
 img {
 	width: 100%;
+	margin-top : 2vh;
+	margin-bottom : 2vh;
 }
 
 iframe {
