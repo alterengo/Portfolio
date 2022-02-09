@@ -151,12 +151,16 @@ img {
 		font-size : 48px;
 	}
 
-	iframe {
-		width : 92vw;
-		height : 70vw;
-	}
-
 	.me_pic {
 		width : 30vw; 
+	}
+
+	.content {
+		padding-top : 6vh;
+		padding-bottom : 6vh;
+	}
+
+	.seperator {
+		padding : 1vh;
 	}
 }
