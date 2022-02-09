@@ -106,6 +106,10 @@ img {
 	box-shadow : none;
 }
 
+#logo {
+	width : 10%;
+}
+
 @media (max-width: 1400px) 
 { 
 	.width_wrapper {
