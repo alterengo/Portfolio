@@ -31,45 +31,6 @@ h3 {
 	margin : 0;
 }
 
-.stage {
-	background-image: url("images/markus-spiske-7ZBP2cFBooM-unsplash.jpg"); /* The image used */
-	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-.subheadline {
-	font-size:20px;
-	font-weight: 500;
-}
-
-.width_wrapper {
-	width : 50vw;
-}
-
-.full_height {
-	height : 92vh;
-}
-
-.content {
-	display : flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-top : 4vh;
-	padding-bottom : 4vh;
-}
-
-.light {
-	background-color : #f4f3ee;
-	color : #8a817c;
-}
-
-.dark {
-	background-color : #e0afa0;
-	color : #463f3a;
-}
-
 a {
 	text-decoration: underline;
 	color:inherit;
@@ -95,6 +56,38 @@ img {
 	width: 100%;
 	margin-top : 2vh;
 	margin-bottom : 2vh;
+}
+
+.light {
+	background-color : #f4f3ee;
+	color : #8a817c;
+}
+
+.dark {
+	background-color : #e0afa0;
+	color : #463f3a;
+}
+
+.subheadline {
+	font-size:20px;
+	font-weight: 500;
+}
+
+.width_wrapper {
+	width : 50vw;
+}
+
+.full_height {
+	height : 92vh;
+}
+
+.content {
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top : 4vh;
+	padding-bottom : 4vh;
 }
 
 .seperator {
