@@ -31,6 +31,10 @@ h3 {
 	margin : 0;
 }
 
+b {
+	font-variation-settings: "wght" 400;
+}
+
 a {
 	text-decoration: underline;
 	color:inherit;
