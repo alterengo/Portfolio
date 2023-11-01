@@ -62,6 +62,7 @@ a:visited {
 
 p {
 	margin : 0;
+	margin-bottom: 10px;
 	padding : 0;
 }
 
@@ -76,8 +77,13 @@ li {
 }
 
 img {
-	width: 100%;
-	margin-top : 2vh;
+	width: 0%;
+}
+
+.caseimage {
+	width: 80%;
+	margin-left: 10%;
+	margin-top : 4vh;
 	margin-bottom : 2vh;
 }
 
@@ -97,11 +103,13 @@ img {
 }
 
 .width_wrapper {
+	margin : 0;
+	padding : 0;
 	width : 50vw;
 }
 
 .full_height {
-	height : 92vh;
+	height : 84vh;
 }
 
 .content {
@@ -109,8 +117,8 @@ img {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top : 4vh;
-	padding-bottom : 4vh;
+	padding-top : 8vh;
+	padding-bottom : 8vh;
 }
 
 .seperator {
@@ -159,6 +167,13 @@ img {
 
 @media (max-width: 720px)
 {
+	.caseimage {
+		width: 100%;
+		margin-left: 0;
+		margin-top : 4vh;
+		margin-bottom : 2vh;
+	}
+
 	.full_height {
 		height : auto;
 	}
