@@ -14,11 +14,12 @@ body {
 	padding : 0;
 	margin : 0;
 	font-family: "Jost", sans-serif;
-	font-size : 18px;
+	font-size : 16px;
 	font-variation-settings: "wght" 250;
 	letter-spacing : 0.8px;
 	text-align: left;
 	line-height: 1.6;
+	background-color: #010101;
 }
 
 h1 {
@@ -67,6 +68,7 @@ p {
 }
 
 ul {
+
 	list-style-type: none;
 	margin : 0;
 	padding : 0;
@@ -167,6 +169,22 @@ img {
 
 @media (max-width: 720px)
 {
+	h1 {
+		font-size : 40px;
+	}
+	
+	h2 {
+		font-size: 32px;
+	}
+	
+	h3 {
+		font-size: 24px;
+	}
+
+	p {
+		font-size : 14px;
+	}
+
 	.caseimage {
 		width: 100%;
 		margin-left: 0;
@@ -182,11 +200,27 @@ img {
 @media (max-width: 480px) 
 { 
 	.width_wrapper {
-		width : 94vw;
+		width : 84vw;
 	}
 
 	h1 {
-		font-size : 48px;
+		font-size : 32px;
+	}
+	
+	h2 {
+		font-size: 24px;
+	}
+	
+	h3 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size : 16px;
+	}
+
+	ul {
+		font-size : 16px;
 	}
 
 	.me_pic {
@@ -194,11 +228,16 @@ img {
 	}
 
 	.content {
-		padding-top : 6vh;
-		padding-bottom : 6vh;
+		padding-top : 8vh;
+		padding-bottom : 8vh;
 	}
 
 	.seperator {
+		margin : 0;
 		padding : 1vh;
+	}
+
+	.notlast {
+		padding-bottom : 0vh;
 	}
 }
