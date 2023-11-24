@@ -1,243 +1,189 @@
 @font-face {
-    font-family: Jost;
-    src: url(InterTight-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: Lora;
+    font-family: PoltawskiNovy;
     src: url(PoltawskiNowy-VariableFont_wght.ttf);
 }
 
+:root {
+    /* Defining Pastel Color Palette */
+    --color-text: #463f3a; /* Soft dark gray for text */
+    --color-background: #f4f3ee; /* Very light pastel background */
+    --color-primary: #f4f3ee; /* Pastel blue */
+    --color-secondary: #e0afa0; /* Off-white pastel */
+    --color-accent: #e63946; /* Soft red for accents */
+    --color-border: #a2a2a2; /* Light gray for borders */
+}
 
+/* General Styles */
 body {
-	width: 100vw;
+	width : 100vw;
+    font-family: 'Helvetica', sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
 	padding : 0;
 	margin : 0;
-	font-family: "Jost", sans-serif;
-	font-size : 16px;
-	font-variation-settings: "wght" 250;
+	font-size : 1em;
+	font-weight : 100;
 	letter-spacing : 0.8px;
 	text-align: left;
 	line-height: 1.6;
-	background-color: #010101;
-}
-
-h1 {
-	font-size: 64px;
-	margin : 0;
-	font-family: "Lora", serif;
-	line-height: 1.3;
-	font-variation-settings: "wght" 100;
-	letter-spacing : 0.0px;
-}
-
-h2 {
-	font-family: "Lora", serif;
-	font-size: 40px;
-	margin : 0;
-	font-variation-settings: "wght" 100;
-	letter-spacing : 0.0px;
-}
-
-h3 {
-	font-family: "Lora", serif;
-	font-size: 24px;
-	margin : 0;
-	font-variation-settings: "wght" 100;
-	letter-spacing : 0.0px;
-}
-
-b {
-	font-variation-settings: "wght" 400;
-}
-
-a {
-	text-decoration: underline;
-	color:inherit;
-}
-
-a:visited {
-	text-decoration: underline;
-	color:inherit;
-}
-
-p {
-	margin : 0;
-	margin-bottom: 10px;
-	padding : 0;
-}
-
-ul {
-
-	list-style-type: none;
-	margin : 0;
-	padding : 0;
-}
-
-li {
-	margin-top : 4px;
-}
-
-img {
-	width: 0%;
-}
-
-.caseimage {
-	width: 80%;
-	margin-left: 10%;
-	margin-top : 4vh;
-	margin-bottom : 2vh;
-}
-
-.light {
-	background-color : #f4f3ee;
-	color : #8a817c;
-}
-
-.dark {
-	background-color : #e0afa0;
-	color : #463f3a;
-}
-
-.subheadline {
-	font-size:20px;
-	font-weight: 500;
-}
-
-.width_wrapper {
-	margin : 0;
-	padding : 0;
-	width : 50vw;
-}
-
-.full_height {
-	height : 84vh;
-}
-
-.content {
 	display : flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top : 8vh;
-	padding-bottom : 8vh;
 }
 
-.seperator {
-	margin-top: 6vh;
+section {
+	width: 960px;
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+    padding-top : 3em;
+    padding-bottom : 3em;
 }
 
-.me_pic {
-	width : 15vw; 
-	border : none;
-	box-shadow : none;
+section img {
+    padding-bottom : 1em;
 }
 
-#logo {
-	width : 10%;
+a {
+    color : var(--color-text);
+    text-decoration: none;
 }
 
-#footer {
-	background-color: #010101;
-	color : #f4f3ee;
-	text-align : right;
-	font-size : 12px;
+a:hover {
+    text-decoration: line-through;
 }
 
-@media (max-width: 1400px) 
-{ 
-	.width_wrapper {
-		width : 80vw;
-	}
-
-	h1 {
-		font-size: 56px;
-	}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: var(--color-text);
+	font-size: 64px;
+	margin : 0;
+	font-family: "PoltawskiNovy", serif;
+	line-height: 1.3;
+	font-variation-settings: "wght" 100;
+	letter-spacing : 0.0px;
+    text-align: left;
+    padding-bottom : 0.5em;
 }
 
-@media (max-width: 1024px) 
-{ 
-	iframe {
-		width : 70vw;
-		height : 50vw;
-	}
-
-	.me_pic {
-		width : 20vw; 
-	}
+h2 {
+    color: var(--color-text);
+    font-size: 2em;
+    font-weight : 600;
+    padding-bottom : 0.5em;
 }
 
-@media (max-width: 720px)
-{
-	h1 {
-		font-size : 40px;
-	}
-	
-	h2 {
-		font-size: 32px;
-	}
-	
-	h3 {
-		font-size: 24px;
-	}
-
-	p {
-		font-size : 14px;
-	}
-
-	.caseimage {
-		width: 100%;
-		margin-left: 0;
-		margin-top : 4vh;
-		margin-bottom : 2vh;
-	}
-
-	.full_height {
-		height : auto;
-	}
+h3 {
+    color: var(--color-text);
+    font-size: 1.2em;
+    font-weight : 600;
+    padding-bottom : 0.4em;
 }
 
-@media (max-width: 480px) 
-{ 
-	.width_wrapper {
-		width : 84vw;
-	}
+p {
+	font-size : 1em;
+	font-variation-settings: "wght" 250;
+	letter-spacing : 0.8px;
+	text-align: left;
+    color: var(--color-text);
+}
 
-	h1 {
-		font-size : 32px;
-	}
-	
-	h2 {
-		font-size: 24px;
-	}
-	
-	h3 {
-		font-size: 20px;
-	}
+/* Cases */
+.case {
+    margin-top : 1em;
+    margin-bottom : 1em;
+}
 
-	p {
-		font-size : 16px;
-	}
+.case img {
+    margin-bottom : 1em;
+}
 
-	ul {
-		font-size : 16px;
-	}
+/* Navigation Bar */
+nav {
+	width : 60em;
+	height : 3em;
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+}
 
-	.me_pic {
-		width : 30vw; 
-	}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* This will align your nav items horizontally */
+    justify-content: left; /* Center the nav items */
+}
 
-	.content {
-		padding-top : 8vh;
-		padding-bottom : 8vh;
-	}
+nav li {
+    margin: 0 1em; /* Adds spacing between nav items */
+}
 
-	.seperator {
-		margin : 0;
-		padding : 1vh;
-	}
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stacks the nav items vertically on smaller screens */
+        align-items: center; /* Center align the vertical nav items */
+    }
+    nav li {
+        margin: 5px 0; /* Adjusts margin for stacked items */
+    }
+}
 
-	.notlast {
-		padding-bottom : 0vh;
-	}
+/* Header Styles */
+header {
+	width : 960px;
+	min-height : calc(100vh - 50px);
+    text-align: left;
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+}
+
+
+/* Work Experience Section */
+#work-experience {
+    background: var(--color-background);
+}
+
+#work-experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+#work-experience li {
+    padding-bottom : 0.4em;
+}
+
+/* Project Portfolio Section */
+#project-portfolio .case {
+    background: var(--color-background);
+}
+
+.caseimage {
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+}
+
+/* Footer Styles */
+footer {
+}
+
+footer#contact-info {
+	width : 960px;
+	height : 100%;
+    text-align: left;
+    padding: 3em 0;
+}
+
+footer#contact-info img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-top: 1em;
 }
