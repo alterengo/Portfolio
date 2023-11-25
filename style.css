@@ -131,7 +131,7 @@ nav li {
 /* Header Styles */
 header {
 	width : 960px;
-	min-height : calc(100vh - 50px);
+	min-height : 87vh;
     text-align: left;
 	display : flex;
 	flex-direction: column;
@@ -202,11 +202,7 @@ footer#contact-info img {
     }
 
     nav {
-        visibility: hidden;
-    }
-
-    header {
-        min-height : 100vh;
+        display: none;
     }
 
 }
