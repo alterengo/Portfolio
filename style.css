@@ -105,6 +105,7 @@ p {
     overflow : scroll;
     margin-bottom: 1em;
     margin-top : 1em;
+    border-radius :1em;
 }
 
 .caseimage {
@@ -242,6 +243,11 @@ footer#contact-info img {
     .caseimage {
         height : 240px;
         width : auto;
+    }
+
+    .caseimage_container {
+        padding-top: 5em;
+        padding-bottom : 5em;
     }
 }
 
