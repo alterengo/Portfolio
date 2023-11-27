@@ -6,7 +6,7 @@
 :root {
     /* Defining Pastel Color Palette */
     --color-text: #463f3a; /* Soft dark gray for text */
-    --color-background: #f4f3ee; /* Very light pastel background */
+    --color-background: #FFF; /* Very light pastel background */
     --color-primary: #f4f3ee; /* Pastel blue */
     --color-secondary: #e0afa0; /* Off-white pastel */
     --color-accent: #e63946; /* Soft red for accents */
@@ -42,10 +42,6 @@ section {
 	align-items: left;
     padding-top : 3em;
     padding-bottom : 3em;
-}
-
-section img {
-    padding-bottom : 1em;
 }
 
 a {
@@ -100,8 +96,19 @@ p {
     margin-bottom : 1em;
 }
 
-.case img {
-    margin-bottom : 1em;
+.caseimage_container {
+    padding-top : 96px;
+    padding-bottom : 96px;
+    background-color : #f00;
+    width : 100%;
+    overflow : scroll;
+    margin-bottom: 1em;
+    margin-top : 1em;
+}
+
+.caseimage {
+    height : 400px;
+    width : auto;
 }
 
 /* Navigation Bar */
@@ -157,12 +164,6 @@ header {
 /* Project Portfolio Section */
 #project-portfolio .case {
     background: var(--color-background);
-}
-
-.caseimage {
-    width: 100%;
-    height: auto;
-    margin-top: 1em;
 }
 
 /* Footer Styles */
@@ -236,13 +237,14 @@ footer#contact-info img {
     p {
         font-size: 1em; /* Reduce paragraph font size */
     }
+
+    .caseimage {
+        height : 240px;
+        width : auto;
+    }
 }
 
 /* General Responsive Adjustments */
-img, .caseimage {
-    max-width: 100%;
-    height: auto; /* Ensures images are responsive and maintain aspect ratio */
-}
 
 section {
     max-width: 100%; /* Ensures sections do not overflow on small screens */
