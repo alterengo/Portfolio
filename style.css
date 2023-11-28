@@ -1,6 +1,6 @@
 @font-face {
-    font-family: PoltawskiNovy;
-    src: url(PoltawskiNowy-VariableFont_wght.ttf);
+    font-family: Inter;
+    src: url(SpaceGrotesk.ttf);
 }
 
 :root {
@@ -15,16 +15,16 @@
 
 /* General Styles */
 body {
-	width : 100vw;
-    font-family: 'Helvetica', sans-serif;
+	width : 100%;
+    font-family: 'Inter', sans-serif;
     color: var(--color-text);
     background-color: var(--color-background);
     line-height: 1.6;
 	padding : 0;
 	margin : 0;
-	font-size : 1em;
-	font-weight : 100;
-	letter-spacing : 0.8px;
+	font-size : 1.2rem;
+	font-weight : 200;
+	letter-spacing : 0px;
 	text-align: left;
 
 	display : flex;
@@ -35,13 +35,12 @@ body {
 }
 
 section {
-	width: 960px;
+	width : 60rem;
 	display : flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: left;
-    padding-top : 3em;
-    padding-bottom : 3em;
+    padding-top : 3rem;
 }
 
 a {
@@ -54,43 +53,42 @@ a:hover {
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-	font-size: 4em;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+	font-size: 3.6rem;
 	margin : 0;
-	font-family: "PoltawskiNovy", serif;
-	line-height: 1.3;
-	font-variation-settings: "wght" 100;
-	letter-spacing : 0.0px;
+	line-height: 1.2;
+	font-weight: 400;
+	letter-spacing : 1px;
     text-align: left;
-    padding-bottom : 0.5em;
+    padding-bottom : 0.5rem;
     width : 100%;
 }
 
 h2 {
-    font-family: "PoltawskiNovy", serif;
-    font-size: 2em;
-    font-weight : 600;
-    padding-bottom : 0.5em;
+    font-size: 2rem;
+    font-weight : 400;
+    padding-bottom : 0.5rem;
+
 }
 
 h3 {
     color: var(--color-text);
-    font-size: 1.2em;
-    font-weight : 600;
-    padding-bottom : 0.4em;
+    font-size: 1.2rem;
+    font-weight : 400;
+    padding-bottom : 0.4rem;
 }
 
 p {
-	font-size : 1em;
-	font-variation-settings: "wght" 250;
-	letter-spacing : 0.8px;
+}
+
+b {
+    font-weight: 500;
 }
 
 /* Cases */
 .case {
-    margin-top : 1em;
-    margin-bottom : 1em;
+    margin-top : 3rem;
 }
 
 .caseimage_container {
@@ -100,14 +98,19 @@ p {
     color : var(--color-background);
     width : 100%;
     overflow : scroll;
-    margin-bottom: 1em;
-    margin-top : 1em;
-    border-radius :1em;
+    margin-bottom: 1rem;
+    margin-top : 1rem;
+    border-radius :1rem;
     text-align : center;
+    scrollbar-width : none;
+}
+
+.caseimage_container::-webkit-scrollbar {
+    display: none;
 }
 
 .caseimage {
-    height : 400px;
+    height : 25rem;
     width : auto;
 }
 
@@ -117,12 +120,15 @@ p {
 
 /* Navigation Bar */
 nav {
-    width : 960px;
-	height : 3em;
+    width : 60rem;
+    padding-left : calc(50vw - 30rem);
+    padding-right : calc(50vw - 30rem);
+	height : 3rem;
 	display : flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: left;
+    background-color: var(--color-primary);
 }
 
 nav ul {
@@ -135,19 +141,25 @@ nav ul {
 }
 
 nav li {
-    margin-right: 2em; /* Adds spacing between nav items */
+    margin-right: 2rem; /* Adds spacing between nav items */
 }
 
 
 /* Header Styles */
 header {
-	width : 960px;
-	min-height : 87vh;
+	width : 60rem;
+    padding-left : calc(50vw - 30rem);
+    padding-right : calc(50vw - 30rem);
+	min-height : calc(100vh - 3rem);
     text-align: left;
 	display : flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: left;
+
+    background-color: var(--color-primary);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 
 
@@ -162,7 +174,7 @@ header {
 }
 
 #work-experience li {
-    padding-bottom : 0.4em;
+    padding-bottom : 0.2rem;
 }
 
 /* Project Portfolio Section */
@@ -175,35 +187,37 @@ footer {
 }
 
 footer#contact-info {
-	width : 960px;
+	width : 60rem;
 	height : 100%;
     text-align: left;
-    padding: 3em 0;
+    padding: 3rem 0;
 }
 
 footer#contact-info img {
-    max-width: 100px;
+    width: 10rem;
     border-radius: 50%;
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 /* Media Query for Tablets */
 @media screen and (max-width: 1023px) {
     body {
-        margin-left:5vw;
+        width : 100%;
         align-items: start;
     }
 
     body, header, footer#contact-info, section {
-        width: 90vw; /* Adjust width for tablet screens */
+        width : 90vw;
+        padding-left : 5vw;
+        padding-right : 5vw;
     }
 
     h1 {
-        font-size: 3em; /* Adjust heading size for tablet screens */
+        font-size: 3rem; /* Adjust heading size for tablet screens */
     }
 
     h2 {
-        font-size: 1.5em; /* Adjust subheading size */
+        font-size: 1.5rem; /* Adjust subheading size */
     }
 
     nav {
@@ -215,46 +229,29 @@ footer#contact-info img {
 /* Enhanced Media Query for Mobile Phones */
 @media screen and (max-width: 600px) {
     body, header, footer#contact-info, section {
-        width: 94vw; /* Increase width to use more of the small screen */
-        margin: auto; /* Center content */
-        font-size: 0.9em;
-
-    }
-
-    body {
-        margin-left: 3vw;
-        align-items: start;
+        font-size: 1rem;
     }
 
     h1 {
-        font-size: 2.5em; /* Reduce heading size for mobile screens */
+        font-size: 2.5rem; /* Reduce heading size for mobile screens */
     }
 
     h2 {
-        font-size: 1.4em; /* Reduce subheading size */
+        font-size: 1.4rem; /* Reduce subheading size */
     }
 
     h3 {
-        font-size: 1.2em; /* Reduce subheading size */
-    }
-
-    p {
-        font-size : 14px;
+        font-size: 1.2rem; /* Reduce subheading size */
     }
 
     .caseimage {
-        height : 240px;
+        height : 15rem;
         width : auto;
     }
 
     .caseimage_container {
-        padding-top: 5em;
-        padding-bottom : 5em;
+        padding-top: 5rem;
+        padding-bottom : 5rem;
     }
 }
 
-/* General Responsive Adjustments */
-
-section {
-    max-width: 100%; /* Ensures sections do not overflow on small screens */
-}
