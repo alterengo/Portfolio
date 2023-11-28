@@ -211,6 +211,10 @@ footer#contact-info img {
         padding-right : 5vw;
     }
 
+    header {
+        height : 100vh;
+    }
+
     h1 {
         font-size: 3rem; /* Adjust heading size for tablet screens */
     }
