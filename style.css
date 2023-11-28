@@ -206,7 +206,7 @@ footer#contact-info img {
         align-items: start;
     }
 
-    body, header, footer#contact-info, section {
+    header, footer#contact-info, section {
         width : 90vw;
         padding-left : 5vw;
         padding-right : 5vw;
