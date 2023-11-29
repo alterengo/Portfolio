@@ -59,7 +59,7 @@ h1 {
 	margin : 0;
 	line-height: 1.2;
 	font-weight: 400;
-	letter-spacing : 1px;
+	letter-spacing : 0.8px;
     text-align: left;
     padding-bottom : 0.5rem;
     width : 100%;
@@ -74,21 +74,26 @@ h2 {
 
 h3 {
     color: var(--color-text);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight : 400;
     padding-bottom : 0.4rem;
-}
-
-p {
 }
 
 b {
     font-weight: 500;
 }
 
+small {
+    font-size: 0.8rem;
+}
+
 /* Cases */
 .case {
     margin-top : 3rem;
+}
+
+.firstcase {
+    margin-top : 0;
 }
 
 .caseimage_container {
@@ -103,6 +108,9 @@ b {
     border-radius :1rem;
     text-align : center;
     scrollbar-width : none;
+
+    background-image: url("images/pattern.png");
+    background-position: center center;
 }
 
 .caseimage_container::-webkit-scrollbar {
@@ -142,6 +150,7 @@ nav ul {
 
 nav li {
     margin-right: 2rem; /* Adds spacing between nav items */
+    font-size : 1rem;
 }
 
 
@@ -184,19 +193,20 @@ header {
 
 /* Footer Styles */
 footer {
-}
-
-footer#contact-info {
 	width : 60rem;
 	height : 100%;
     text-align: left;
     padding: 3rem 0;
 }
 
-footer#contact-info img {
+footer img {
     width: 10rem;
     border-radius: 50%;
     margin-top: 1rem;
+}
+
+#handcrafted {
+    margin-bottom : 3rem;
 }
 
 /* Media Query for Tablets */
@@ -205,7 +215,7 @@ footer#contact-info img {
         width : 100%;
     }
 
-    header, footer#contact-info, section {
+    header, footer, section {
         width : 90vw;
         padding-left : 5vw;
         padding-right : 5vw;
@@ -231,7 +241,7 @@ footer#contact-info img {
 
 /* Enhanced Media Query for Mobile Phones */
 @media screen and (max-width: 600px) {
-    body, header, footer#contact-info, section {
+    body, header, footer, section {
         font-size: 1rem;
     }
 
