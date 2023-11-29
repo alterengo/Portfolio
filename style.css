@@ -79,6 +79,11 @@ h3 {
     padding-bottom : 0.4rem;
 }
 
+.background_pattern {
+    background-image: url("images/pattern.png");
+    background-position: center center;
+}
+
 b {
     font-weight: 500;
 }
@@ -108,9 +113,6 @@ small {
     border-radius :1rem;
     text-align : center;
     scrollbar-width : none;
-
-    background-image: url("images/pattern.png");
-    background-position: center center;
 }
 
 .caseimage_container::-webkit-scrollbar {
@@ -207,6 +209,8 @@ footer img {
 
 #handcrafted {
     margin-bottom : 3rem;
+    display : flex;
+    flex-direction: column;
 }
 
 /* Media Query for Tablets */
