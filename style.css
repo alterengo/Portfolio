@@ -92,6 +92,10 @@ small {
     font-size: 0.8rem;
 }
 
+video {
+    border-radius : 1rem;
+}
+
 /* Cases */
 .case {
     margin-top : 3rem;
