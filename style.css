@@ -96,6 +96,17 @@ video {
     border-radius : 1rem;
 }
 
+#draggable {
+    cursor : grab;
+}
+
+#draggable div {
+    height: 400px; 
+    width : 1200px; 
+    background-image: url('images/rt_challenges.png'); 
+    background-size: contain;
+}
+
 /* Cases */
 .case {
     margin-top : 3rem;
@@ -104,6 +115,8 @@ video {
 .firstcase {
     margin-top : 0;
 }
+
+
 
 .caseimage_container {
     padding-top : 96px;
@@ -139,9 +152,8 @@ nav {
     padding-right : calc(50vw - 30rem);
 	height : 3rem;
 	display : flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: left;
+	flex-direction: row;
+	justify-content: space-between;
     background-color: var(--color-primary);
 }
 
@@ -151,12 +163,15 @@ nav ul {
     margin: 0;
     display: flex; /* This will align your nav items horizontally */
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
 }
 
 nav li {
     margin-right: 2rem; /* Adds spacing between nav items */
     font-size : 1rem;
+    display: flex; /* This will align your nav items horizontally */
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -263,11 +278,6 @@ footer img {
 
     h3 {
         font-size: 1.2rem; /* Reduce subheading size */
-    }
-
-    .caseimage {
-        height : 15rem;
-        width : auto;
     }
 
     .caseimage_container {
