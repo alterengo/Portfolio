@@ -81,8 +81,6 @@
 			</p>
 			<div class="caseimage_container background_pattern" style="background-color : #007AFF" id="draggable">
 				<div>
-					<!-- a href="https://www.runtastic.com/de/apps/me" target="_blank"><img class="caseimage"
-							src="images/rt_challenges.png" alt="Runtastic Screens"></a -->
 				</div>
 			</div>
 
@@ -218,34 +216,6 @@
 </html>
 
 <script type="text/javascript">
-	/*	const container = document.querySelector('#draggable');
-		let isDown = false;
-		let startX;
-		let scrollLeft;
-	
-		container.addEventListener('mousedown', (e) => {
-			isDown = true;
-			container.classList.add('active');
-			console.log("catch");
-			startX = e.pageX - container.offsetLeft;
-			scrollLeft = container.scrollLeft;
-		});
-	
-		document.body.addEventListener('mouseup', () => {
-			isDown = false;
-			console.log("done");
-			container.classList.remove('active');
-		});
-	
-		document.body.addEventListener('mousemove', (e) => {
-			if (!isDown) return;
-			console.log("movie");
-			e.preventDefault();
-			const x = e.pageX - container.offsetLeft;
-			const walk = (x - startX) * 3; // Scroll-Geschwindigkeit
-			container.scrollLeft = scrollLeft - walk;
-		}); */
-
 	const slider = document.querySelector('#draggable');
 	let isDown = false;
 	let startX;
