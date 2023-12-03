@@ -227,6 +227,11 @@ footer img {
     margin-top: 1rem;
 }
 
+footer .caseimage_container {
+    background-image: url('images/ux-design.jpg');
+    background-size: cover;
+}
+
 #handcrafted {
     margin-top : 1rem;
     margin-bottom : 2rem;
