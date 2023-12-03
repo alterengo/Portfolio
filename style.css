@@ -5,46 +5,52 @@
 
 :root {
     /* Defining Pastel Color Palette */
-    --color-text: #463f3a; /* Soft dark gray for text */
-    --color-background: #FFF; /* Very light pastel background */
-    --color-primary: #f4f3ee; /* Pastel blue */
-    --color-secondary: #e0afa0; /* Off-white pastel */
-    --color-accent: #e63946; /* Soft red for accents */
-    --color-border: #a2a2a2; /* Light gray for borders */
+    --color-text: #463f3a;
+    /* Soft dark gray for text */
+    --color-background: #FFF;
+    /* Very light pastel background */
+    --color-primary: #f4f3ee;
+    /* Pastel blue */
+    --color-secondary: #e0afa0;
+    /* Off-white pastel */
+    --color-accent: #e63946;
+    /* Soft red for accents */
+    --color-border: #a2a2a2;
+    /* Light gray for borders */
 }
 
 /* General Styles */
 body {
-	width : 100%;
+    width: 100%;
     font-family: 'Inter', sans-serif;
     color: var(--color-text);
     background-color: var(--color-background);
     line-height: 1.6;
-	padding : 0;
-	margin : 0;
-	font-size : 1.2rem;
-	font-weight : 200;
-	letter-spacing : 0px;
-	text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 200;
+    letter-spacing: 0px;
+    text-align: left;
 
-	display : flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-    overflow-x:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
 }
 
 section {
-	width : 60rem;
-	display : flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: left;
-    padding-top : 3rem;
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-top: 3rem;
 }
 
 a {
-    color : var(--color-text);
+    color: var(--color-text);
     text-decoration: none;
 }
 
@@ -55,28 +61,28 @@ a:hover {
 h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-	font-size: 3.6rem;
-	margin : 0;
-	line-height: 1.2;
-	font-weight: 400;
-	letter-spacing : 0.8px;
+    font-size: 3.6rem;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: 0.8px;
     text-align: left;
-    padding-bottom : 0.5rem;
-    width : 100%;
+    padding-bottom: 0.5rem;
+    width: 100%;
 }
 
 h2 {
     font-size: 2rem;
-    font-weight : 400;
-    padding-bottom : 0.5rem;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
 
 }
 
 h3 {
     color: var(--color-text);
     font-size: 1.4rem;
-    font-weight : 400;
-    padding-bottom : 0.4rem;
+    font-weight: 400;
+    padding-bottom: 0.4rem;
 }
 
 .background_pattern {
@@ -93,43 +99,43 @@ small {
 }
 
 video {
-    border-radius : 1rem;
+    border-radius: 1rem;
 }
 
 #draggable {
-    cursor : grab;
+    cursor: grab;
 }
 
 #draggable div {
-    height: 400px; 
-    width : 1200px; 
-    background-image: url('images/rt_challenges.png'); 
+    height: 400px;
+    width: 1200px;
+    background-image: url('images/rt_challenges.png');
     background-size: contain;
 }
 
 /* Cases */
 .case {
-    margin-top : 3rem;
+    margin-top: 3rem;
 }
 
 .firstcase {
-    margin-top : 0;
+    margin-top: 0;
 }
 
 
 
 .caseimage_container {
-    padding-top : 96px;
-    padding-bottom : 96px;
-    background-color : var(--color-text);
-    color : var(--color-background);
-    width : 100%;
-    overflow : scroll;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    background-color: var(--color-text);
+    color: var(--color-background);
+    width: 100%;
+    overflow: scroll;
     margin-bottom: 1rem;
-    margin-top : 1rem;
-    border-radius :1rem;
-    text-align : center;
-    scrollbar-width : none;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    scrollbar-width: none;
 }
 
 .caseimage_container::-webkit-scrollbar {
@@ -137,39 +143,38 @@ video {
 }
 
 .caseimage {
-    height : 25rem;
-    width : auto;
+    height: 25rem;
+    width: auto;
 }
 
 .caseimage_container a {
-    color : var(--color-background);
+    color: var(--color-background);
 }
 
 /* Navigation Bar */
 nav {
-    width : 60rem;
-    padding-left : calc(50vw - 30rem);
-    padding-right : calc(50vw - 30rem);
-	height : 3rem;
-	display : flex;
-	flex-direction: row;
-	justify-content: space-between;
-    background-color: var(--color-primary);
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* This will align your nav items horizontally */
+    display: flex;
+    /* This will align your nav items horizontally */
     flex-direction: row;
     justify-content: center;
 }
 
 nav li {
-    margin-right: 2rem; /* Adds spacing between nav items */
-    font-size : 1rem;
-    display: flex; /* This will align your nav items horizontally */
+    margin-right: 2rem;
+    /* Adds spacing between nav items */
+    font-size: 1rem;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
@@ -177,19 +182,23 @@ nav li {
 
 /* Header Styles */
 header {
-	width : 60rem;
-    padding-left : calc(50vw - 30rem);
-    padding-right : calc(50vw - 30rem);
-	min-height : calc(100vh - 3rem);
+    width: 60rem;
+    padding-left: calc(50vw - 30rem);
+    padding-right: calc(50vw - 30rem);
+    min-height: 100vh;
     text-align: left;
-	display : flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
 
-    background-color: var(--color-primary);
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
+
+    background: rgb(244,243,238);
+    background: linear-gradient(326deg, rgba(244,243,238,1) 0%, rgba(253,255,195,1) 58%, rgba(224,175,160,1) 100%);
+
+    
 }
 
 
@@ -204,7 +213,7 @@ header {
 }
 
 #work-experience li {
-    padding-bottom : 0.2rem;
+    padding-bottom: 0.2rem;
 }
 
 /* Project Portfolio Section */
@@ -214,11 +223,12 @@ header {
 
 /* Footer Styles */
 footer {
-	width : 60rem;
-	height : 100%;
+    width: 60rem;
+    height: 100%;
     text-align: left;
     padding-top: 3rem;
-    padding-bottom: 0;;
+    padding-bottom: 0;
+    ;
 }
 
 footer img {
@@ -233,39 +243,44 @@ footer .caseimage_container {
 }
 
 #handcrafted {
-    margin-top : 1rem;
-    margin-bottom : 2rem;
-    display : flex;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
     flex-direction: column;
-    width : 80%;
+    width: 80%;
     text-align: center;
 }
 
 /* Media Query for Tablets */
 @media screen and (max-width: 1023px) {
     body {
-        width : 100%;
+        width: 100%;
     }
 
-    header, footer, section {
-        width : 90vw;
-        padding-left : 5vw;
-        padding-right : 5vw;
+    header,
+    footer,
+    section {
+        width: 90vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 
     header {
-        height : 100vh;
+        height: 100vh;
+        justify-content: center;
     }
 
     h1 {
-        font-size: 3rem; /* Adjust heading size for tablet screens */
+        font-size: 3rem;
+        /* Adjust heading size for tablet screens */
     }
 
     h2 {
-        font-size: 1.5rem; /* Adjust subheading size */
+        font-size: 1.5rem;
+        /* Adjust subheading size */
     }
 
-    nav {
+    header nav {
         display: none;
     }
 
@@ -273,25 +288,31 @@ footer .caseimage_container {
 
 /* Enhanced Media Query for Mobile Phones */
 @media screen and (max-width: 600px) {
-    body, header, footer, section {
+
+    body,
+    header,
+    footer,
+    section {
         font-size: 1rem;
     }
 
     h1 {
-        font-size: 2.5rem; /* Reduce heading size for mobile screens */
+        font-size: 2.2rem;
+        /* Reduce heading size for mobile screens */
     }
 
     h2 {
-        font-size: 1.4rem; /* Reduce subheading size */
+        font-size: 1.4rem;
+        /* Reduce subheading size */
     }
 
     h3 {
-        font-size: 1.2rem; /* Reduce subheading size */
+        font-size: 1.2rem;
+        /* Reduce subheading size */
     }
 
     .caseimage_container {
         padding-top: 5rem;
-        padding-bottom : 5rem;
+        padding-bottom: 5rem;
     }
 }
-
