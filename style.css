@@ -63,9 +63,9 @@ h1 {
     margin-bottom: 0.5rem;
     font-size: 3.6rem;
     margin: 0;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 600;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.08rem;
     text-align: left;
     padding-bottom: 0.5rem;
     width: 100%;
@@ -191,14 +191,21 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
+    color : var(--color-text);
 
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 
     background: rgb(244,243,238);
-    background: linear-gradient(326deg, rgba(244,243,238,1) 0%, rgba(253,255,195,1) 58%, rgba(224,175,160,1) 100%);
+    background: linear-gradient(326deg, rgba(244,243,238,1) 0%, rgba(224,175,160,1) 100%);
 
-    
+    /* background-image: url('images/fox.jpeg');
+    background-size: cover;
+    background-position: center top; */
+}
+
+header a {
+    color : var(--color-text);
 }
 
 
