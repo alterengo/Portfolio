@@ -124,8 +124,8 @@ video {
 
 
 .caseimage_container {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     background-color: var(--color-text);
     color: var(--color-background);
     width: 100%;
@@ -144,6 +144,8 @@ video {
 .caseimage {
     height: 25rem;
     width: auto;
+    padding-left : 6rem;
+    padding-right : 6rem;
 }
 
 .caseimage_container a {
