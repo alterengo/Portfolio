@@ -121,13 +121,11 @@ video {
     margin-top: 0;
 }
 
-
-
 .caseimage_container {
     padding-top: 6rem;
     padding-bottom: 6rem;
     background-color: var(--color-text);
-    color: var(--color-background);
+    /* color: var(--color-background); */
     width: 100%;
     overflow: scroll;
     margin-bottom: 1rem;
@@ -148,8 +146,12 @@ video {
     padding-right : 6rem;
 }
 
+.caseimage_container small {
+    color : var(--color-background);
+}
+
 .caseimage_container a {
-    color: var(--color-background);
+    /* color: var(--color-background); */
 }
 
 /* Navigation Bar */
@@ -231,7 +233,6 @@ footer {
     text-align: left;
     padding-top: 3rem;
     padding-bottom: 0;
-    ;
 }
 
 footer img {
@@ -241,8 +242,9 @@ footer img {
 }
 
 footer .caseimage_container {
-    background-image: url('images/ux-design.jpg');
-    background-size: cover;
+    background-image : url("images/berlin.jpeg");
+    background-size : cover;
+    background-position: center center;
 }
 
 #handcrafted {
