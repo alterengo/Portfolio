@@ -5,7 +5,7 @@
 
 :root {
     /* Defining Pastel Color Palette */
-    --color-text: #463f3a;
+    --color-text: #000;
     /* Soft dark gray for text */
     --color-background: #FFF;
     /* Very light pastel background */
@@ -146,13 +146,13 @@ video {
     padding-right : 6rem;
 }
 
-.caseimage_container small {
+/* .caseimage_container small {
     color : var(--color-background);
 }
 
 .caseimage_container a {
-    /* color: var(--color-background); */
-}
+    color: var(--color-background);
+} */
 
 /* Navigation Bar */
 nav {
@@ -233,6 +233,7 @@ footer {
     text-align: left;
     padding-top: 3rem;
     padding-bottom: 0;
+    color : var(--color-background);
 }
 
 footer img {
@@ -241,10 +242,15 @@ footer img {
     margin-top: 1rem;
 }
 
+footer a {
+    color : var(--color-background);
+}
+
 footer .caseimage_container {
-    background-image : url("images/berlin.jpeg");
+    background-color: var(--color-text);
+    /* background-image : url("images/ux-design.jpg");
     background-size : cover;
-    background-position: center center;
+    background-position: center center; */
 }
 
 #handcrafted {
