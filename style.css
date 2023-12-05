@@ -197,12 +197,7 @@ header {
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 
-    background: rgb(244,243,238);
     background: linear-gradient(326deg, rgba(244,243,238,1) 0%, rgba(224,175,160,1) 100%);
-
-    /* background-image: url('images/fox.jpeg');
-    background-size: cover;
-    background-position: center top; */
 }
 
 header a {
