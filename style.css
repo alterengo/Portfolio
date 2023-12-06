@@ -3,22 +3,12 @@
     src: url(SpaceGrotesk.ttf);
 }
 
-/* TEst */
-
 :root {
-    /* Defining Pastel Color Palette */
     --color-text: #000;
-    /* Soft dark gray for text */
-    --color-background: #FFF;
-    /* Very light pastel background */
+    --color-background: #F7EDE2;
     --color-primary: #f4f3ee;
-    /* Pastel blue */
-    --color-secondary: #e0afa0;
-    /* Off-white pastel */
-    --color-accent: #e63946;
-    /* Soft red for accents */
-    --color-border: #a2a2a2;
-    /* Light gray for borders */
+    --color-secondary: #84A59D;
+    --color-accent: #F6BD60;
 }
 
 /* General Styles */
@@ -70,20 +60,19 @@ h1 {
     text-align: left;
     padding-bottom: 0.5rem;
     width: 100%;
+    color : var(--color-secondary);
 }
 
 h2 {
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 600;
     padding-bottom: 0.5rem;
-
 }
 
 h3 {
-    color: var(--color-text);
     font-size: 1.4rem;
-    font-weight: 400;
-    padding-bottom: 0.4rem;
+    font-weight: 600;
+    padding-bottom: 0rem;
 }
 
 .background_pattern {
@@ -91,8 +80,12 @@ h3 {
     background-position: center center;
 }
 
+p {
+    padding-top : 0.3rem;
+}
+
 b {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 small {
@@ -126,8 +119,6 @@ video {
 .caseimage_container {
     padding-top: 6rem;
     padding-bottom: 6rem;
-    background-color: var(--color-text);
-    /* color: var(--color-background); */
     width: 100%;
     overflow: scroll;
     margin-bottom: 1rem;
@@ -196,24 +187,16 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
-    color : var(--color-text);
 
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 
-    background: linear-gradient(326deg, rgba(244,243,238,1) 0%, rgba(224,175,160,1) 100%);
-}
+    /* background: linear-gradient(326deg, var(--color-background) 0%, var(--color-secondary) 100%); */
 
-header a {
-    color : var(--color-text);
+    background-color: #fff;
 }
-
 
 /* Work Experience Section */
-#work-experience {
-    background: var(--color-background);
-}
-
 #work-experience ul {
     list-style: none;
     padding: 0;
@@ -223,11 +206,6 @@ header a {
     padding-bottom: 0.2rem;
 }
 
-/* Project Portfolio Section */
-#project-portfolio .case {
-    background: var(--color-background);
-}
-
 /* Footer Styles */
 footer {
     width: 60rem;
@@ -235,7 +213,10 @@ footer {
     text-align: left;
     padding-top: 3rem;
     padding-bottom: 0;
-    color : var(--color-background);
+}
+
+footer h1 {
+    text-align: center;
 }
 
 footer img {
@@ -244,15 +225,8 @@ footer img {
     margin-top: 1rem;
 }
 
-footer a {
-    color : var(--color-background);
-}
-
 footer .caseimage_container {
-    background-color: var(--color-text);
-    /* background-image : url("images/ux-design.jpg");
-    background-size : cover;
-    background-position: center center; */
+    background-color: #fff;
 }
 
 #handcrafted {
