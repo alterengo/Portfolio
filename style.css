@@ -5,7 +5,8 @@
 
 :root {
     --color-text: #000;
-    --color-background: #F7EDE2;
+    --color-background: #fff;
+    --color-background_light : #F7EDE2;
     --color-primary: #f4f3ee;
     --color-secondary: #84A59D;
     --color-accent: #F6BD60;
@@ -193,7 +194,7 @@ header {
 
     /* background: linear-gradient(326deg, var(--color-background) 0%, var(--color-secondary) 100%); */
 
-    background-color: #fff;
+    background-color: var(--color-background_light);
 }
 
 /* Work Experience Section */
@@ -226,7 +227,7 @@ footer img {
 }
 
 footer .caseimage_container {
-    background-color: #fff;
+    background-color: var(--color-background_light);
 }
 
 #handcrafted {
