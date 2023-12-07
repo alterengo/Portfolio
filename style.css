@@ -6,7 +6,7 @@
 :root {
     --color-text: #000;
     --color-background: #fff;
-    --color-background_light : #F7EDE2;
+    --color-background_light: #F7EDE2;
     --color-primary: #f4f3ee;
     --color-secondary: #84A59D;
     --color-accent: #F6BD60;
@@ -61,7 +61,7 @@ h1 {
     text-align: left;
     padding-bottom: 0.5rem;
     width: 100%;
-    color : var(--color-secondary);
+    color: var(--color-secondary);
 }
 
 h2 {
@@ -82,7 +82,7 @@ h3 {
 }
 
 p {
-    padding-top : 0.3rem;
+    padding-top: 0.3rem;
 }
 
 b {
@@ -106,6 +106,7 @@ video {
     width: 1200px;
     background-image: url('images/rt_challenges.png');
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* Cases */
@@ -118,9 +119,8 @@ video {
 }
 
 .caseimage_container {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    width: 100%;
+    width : calc(100% - 8rem);
+    padding : 4rem;
     overflow: scroll;
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -136,17 +136,11 @@ video {
 .caseimage {
     height: 25rem;
     width: auto;
-    padding-left : 6rem;
-    padding-right : 6rem;
 }
 
-/* .caseimage_container small {
-    color : var(--color-background);
+.caseimage_container img {
+    padding-right : 4rem;
 }
-
-.caseimage_container a {
-    color: var(--color-background);
-} */
 
 /* Navigation Bar */
 nav {
@@ -162,14 +156,12 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    /* This will align your nav items horizontally */
     flex-direction: row;
     justify-content: center;
 }
 
 nav li {
     margin-right: 2rem;
-    /* Adds spacing between nav items */
     font-size: 1rem;
     display: flex;
     flex-direction: column;
@@ -191,8 +183,6 @@ header {
 
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
-
-    /* background: linear-gradient(326deg, var(--color-background) 0%, var(--color-secondary) 100%); */
 
     background-color: var(--color-background_light);
 }
