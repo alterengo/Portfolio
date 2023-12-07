@@ -46,20 +46,27 @@
 		<h2>👾 projects</h2>
 
 		<!-- Project Portfolio Sections -->
-		<div class="firstcase" id="runtastic_challenges">
+		<div class="case firstcase" id="runtastic_challenges">
 			<small>Runtastic/Adidas • 2018-2019</small>
 			<h3>Boost engagement with challenges</h3>
+			<p>
+				How can we boost the users' engagement and selling branded challenges. How can we help users to surpass
+				themselves by competing with others.
+			</p>
+
+			<p>
+				<br>
+				<a href="#" class="collapse_button" onclick="collapseDescription(event)">↓ Show more details</a>
+			</p>
 
 			<div class="case_description">
 				<p>
+					<br>
 					<b>role</b> I was the responsible designer for social engagement in the Runtastic App. This project
 					not only augmented the app's social aspects but also aligned closely with business
 					objectives, demonstrating the impact of my role from conception to launch.
 				</p>
-				<p>
-					<b>goal</b> Boosting engagement and selling branded challenges. How can we help users to surpass
-					themselves by competing with others.
-				</p>
+
 				<p>
 					<b>challenge</b> How to create users engagement?
 					Engagement comes from users wanting to accept a real challenge with social interactivity.
@@ -75,7 +82,8 @@
 				</p>
 			</div>
 
-			<div class="caseimage_container" style="background-color : #61ADFF" id="draggable">
+
+			<div class="caseimage_container" style="background-color : #D6EAFF" id="draggable">
 				<div>
 				</div>
 			</div>
@@ -85,17 +93,25 @@
 		<div class="case" id="kartenmacherei_fotobuchkonfigurator">
 			<small>Kartenmacherei • 2022</small>
 			<h3>A fotobook configurator</h3>
+
+			<p>
+				The general briefing was to improve conversion and usability of the configurator.
+				We conducted surveys and user interviews to identify the pain points and obstacles and based on the
+				outcome we conducted multiple projects:
+				A dedicated desktop experience, a more accessible navigation strucure, refining the design system
+				for a more consistent experience and more direct manipulation (and several smaller ones).
+			</p>
+
+			<p>
+				<br>
+				<a href="#" class="collapse_button" onclick="collapseDescription(event)">↓ Show more details</a>
+			</p>
+
 			<div class="case_description">
 				<p>
+					<br>
 					<b>role</b> I worked for 9 month freelance as the responsible product designer with the team that
 					developes the fotobook configurator.
-				</p>
-				<p>
-					<b>goal</b> The general briefing was to improve conversion and usability of the configurator.
-					We conducted surveys and user interviews to identify the pain points and obstacles and based on the
-					outcome we conducted multiple projects:
-					A dedicated desktop experience, a more accessible navigation strucure, refining the design system
-					for a more consistent experience and more direct manipulation (and several smaller ones).
 				</p>
 				<p>
 					<b>challenge</b> Designing a real application (like a configurator) is completely different from
@@ -112,20 +128,30 @@
 					a user-centric design process.
 				</p>
 			</div>
-			<div class="caseimage_container" style="background-color : #42D3FF">
+
+			<div class="caseimage_container" style="background-color : #D6F5FF">
 				<video class="caseimage" volume=0 loop controls autoplay>
 					<source src="images/kam_prototype.mp4" type="video/mp4">
 					</source>
 				</video>
 			</div>
+
 		</div>
 
 		<div class="case" id="businesskeeper_platform">
 			<small>Business Keeper (now EQS) • 2020-2021</small>
 			<h3>Transforming seperate applications into a unified experience</h3>
+			<p>
+				I led a transformative redesign of their b2b compliance tool suite to address customer concerns about usability and appearance.
+			</p>
+			<p>
+				<br>
+				<a href="#" class="collapse_button" onclick="collapseDescription(event)">↓ Show more details</a>
+			</p>
 
 			<div class="case_description">
 				<p>
+					<br>
 					As the lead designer at Business Keeper (now EQS) hired in 2019, I led a transformative redesign of
 					their b2b compliance tool suite to address customer concerns about usability and appearance.
 					I conducted a thorough analysis of all applications, identifying key interaction and navigation
@@ -142,7 +168,7 @@
 				</p>
 			</div>
 
-			<div class="caseimage_container" style="background-color : #88ACD3">
+			<div class="caseimage_container" style="background-color : #E1EAF4">
 				<img class="caseimage" src="images/bk_platform.png">
 			</div>
 		</div>
@@ -258,6 +284,21 @@
 	let isDown = false;
 	let startX;
 	let scrollLeft;
+
+	function collapseDescription(event) {
+		event.preventDefault();
+		var parent = event.target.closest('.case');
+		var description = parent.querySelector('.case_description');
+		var button = parent.querySelector('.collapse_button');
+
+		if (description.style.display === 'block') {
+			description.style.display = 'none';
+			button.innerText = "↓ Show more details";
+		} else {
+			description.style.display = 'block';
+			button.innerText = "↑ Show less details";
+		}
+	}
 
 	slider.addEventListener('mousedown', (e) => {
 		isDown = true;
