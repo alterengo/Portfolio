@@ -239,6 +239,10 @@ footer img {
     margin-top: 1rem;
 }
 
+footer .caseimage_container img {
+    padding : 0;
+}
+
 footer .caseimage_container {
     background-color: var(--color-background_light);
 }
