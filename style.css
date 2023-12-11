@@ -99,18 +99,6 @@ video {
     border-radius: 1rem;
 }
 
-#draggable {
-    cursor: grab;
-}
-
-#draggable div {
-    height: 400px;
-    width: 1200px;
-    background-image: url('images/rt_challenges.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 /* Cases */
 .case {
     margin-top: 3rem;
@@ -137,6 +125,14 @@ video {
     background-color: var(--color-accent);
 }
 
+.caseimage_container div {
+    cursor: grab;
+    height: 25rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right : 4rem;
+}
+
 .caseimage_container::-webkit-scrollbar {
     display: none;
 }
@@ -146,23 +142,8 @@ video {
     width: auto;
 }
 
-.caseimage_container img {
-    padding-right : 4rem;
-}
-
 .case_description {
     display: none;
-}
-
-iframe {
-    width : 100%;
-    overflow: hidden;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    border-radius: 1rem;
-    text-align: center;
-    scrollbar-width: none;
-    background-color: var(--color-background);
 }
 
 /* Navigation Bar */
@@ -209,6 +190,12 @@ header {
     border-bottom-right-radius: 2rem;
 
     background-color: var(--color-background_light);
+}
+
+.minimal {
+    min-height : 0;
+    height : auto;
+    background: none;
 }
 
 /* Work Experience Section */

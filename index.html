@@ -83,9 +83,8 @@
 			</div>
 
 
-			<div class="caseimage_container" style="background-color : #007AFF" id="draggable">
-				<div>
-				</div>
+			<div class="caseimage_container" style="background-color : #007AFF">
+				<div style="background-image : url(images/rt_challenges.png); width : 1060px;"></div>
 			</div>
 
 		</div>
@@ -178,8 +177,12 @@
 			</div>
 
 			<div class="caseimage_container" style="background-color : #203B58">
-				<img class="caseimage" src="images/bk_platform.png">
+				<div style="background-image : url(images/bk_platform.png); width : 1700px;"></div>
 			</div>
+
+			<!-- div class="caseimage_container" style="background-color : #203B58">
+				<img class="caseimage" src="images/bk_platform.png">
+			</div -->
 		</div>
 
 		<div class="case" id="sideproject_eye">
@@ -215,6 +218,10 @@
 
 			</div>
 
+			<!-- div class="caseimage_container" style="background-color : #FF4F00">
+				<div style="background-image : url(images/sp_eye.png); width : 520px;"></div>
+			</div -->
+
 			<div class="caseimage_container" style="background-color : #FF4F00">
 				<img class="caseimage" src="images/sp_eye.png">
 			</div>
@@ -222,9 +229,9 @@
 
 
 		<div class="case" id="others">
-			<h3>Some more names I worked with ...</h3>
+			<h3>Some more names to drop ...</h3>
 			<p>
-				Deutsche Bahn, Allianz, VW, TUIfly, Eucerin, Becks and more.
+				I also worked with Deutsche Bahn, Allianz, VW, TUIfly, Eucerin, Becks and even more.
 			</p>
 		</div>
 
@@ -281,25 +288,10 @@
 </html>
 
 <script type="text/javascript">
-	const slider = document.querySelector('#draggable');
+	const slider = document.querySelector('.caseimage_container');
 	let isDown = false;
 	let startX;
 	let scrollLeft;
-
-	function collapseDescription(event) {
-		event.preventDefault();
-		var parent = event.target.closest('.case');
-		var description = parent.querySelector('.case_description');
-		var button = parent.querySelector('.collapse_button');
-
-		if (description.style.display === 'block') {
-			description.style.display = 'none';
-			button.innerText = "↓ read more";
-		} else {
-			description.style.display = 'block';
-			button.innerText = "↑ read less";
-		}
-	}
 
 	slider.addEventListener('mousedown', (e) => {
 		isDown = true;
@@ -326,4 +318,21 @@
 		slider.scrollLeft = scrollLeft - walk;
 		console.log(walk);
 	});
+
+
+	function collapseDescription(event) {
+		event.preventDefault();
+		var parent = event.target.closest('.case');
+		var description = parent.querySelector('.case_description');
+		var button = parent.querySelector('.collapse_button');
+
+		if (description.style.display === 'block') {
+			description.style.display = 'none';
+			button.innerText = "↓ read more";
+		} else {
+			description.style.display = 'block';
+			button.innerText = "↑ read less";
+		}
+	}
+
 </script>
