@@ -179,6 +179,10 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    text-decoration: none;
+}
+
 
 /* Header Styles */
 header {

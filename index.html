@@ -180,9 +180,6 @@
 				<div style="background-image : url(images/bk_platform.png); width : 1700px;"></div>
 			</div>
 
-			<!-- div class="caseimage_container" style="background-color : #203B58">
-				<img class="caseimage" src="images/bk_platform.png">
-			</div -->
 		</div>
 
 		<div class="case" id="sideproject_eye">
@@ -218,12 +215,8 @@
 
 			</div>
 
-			<!-- div class="caseimage_container" style="background-color : #FF4F00">
-				<div style="background-image : url(images/sp_eye.png); width : 520px;"></div>
-			</div -->
-
 			<div class="caseimage_container" style="background-color : #FF4F00">
-				<img class="caseimage" src="images/sp_eye.png">
+				<div style="background-image : url(images/sp_eye.png); width : 723px;"></div>
 			</div>
 		</div>
 
@@ -288,37 +281,38 @@
 </html>
 
 <script type="text/javascript">
-	const slider = document.querySelector('.caseimage_container');
-	let isDown = false;
-	let startX;
-	let scrollLeft;
+    const sliders = document.querySelectorAll('.caseimage_container');
 
-	slider.addEventListener('mousedown', (e) => {
-		isDown = true;
-		slider.classList.add('active');
-		startX = e.pageX - slider.offsetLeft;
-		scrollLeft = slider.scrollLeft;
-	});
+    sliders.forEach(slider => {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
 
-	slider.addEventListener('mouseleave', () => {
-		isDown = false;
-		slider.classList.remove('active');
-	});
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.classList.add('active');
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
 
-	slider.addEventListener('mouseup', () => {
-		isDown = false;
-		slider.classList.remove('active');
-	});
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
 
-	slider.addEventListener('mousemove', (e) => {
-		if (!isDown) return;
-		e.preventDefault();
-		const x = e.pageX - slider.offsetLeft;
-		const walk = (x - startX) * 3; //scroll-fast
-		slider.scrollLeft = scrollLeft - walk;
-		console.log(walk);
-	});
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
 
+        slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 3; //scroll-fast
+            slider.scrollLeft = scrollLeft - walk;
+        });
+    });
 
 	function collapseDescription(event) {
 		event.preventDefault();
