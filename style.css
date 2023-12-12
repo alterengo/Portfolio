@@ -46,12 +46,13 @@ section {
 
 a {
     color: var(--color-text);
-    text-decoration: none;
+    text-decoration: underline;
     cursor: pointer;
 }
 
 a:hover {
     text-decoration: underline;
+    color : var(--color-secondary);
 }
 
 h1 {
@@ -171,6 +172,11 @@ nav li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 
