@@ -147,6 +147,21 @@ video {
     display: none;
 }
 
+/* Bookmarks */
+.bookmark {
+    margin-top : 1rem;
+    margin-bottom : 1rem;
+}
+
+.bookmark a {
+    text-decoration : none;
+
+}
+
+.bookmark a:hover {
+    text-decoration: underline;
+}
+
 /* Navigation Bar */
 nav {
     width: 100%;
