@@ -123,7 +123,6 @@ video {
     border-radius: 1rem;
     text-align: center;
     scrollbar-width: none;
-    background-color: var(--color-accent);
 }
 
 .caseimage_container div {
