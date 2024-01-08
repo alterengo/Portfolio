@@ -117,8 +117,8 @@ small {
     margin-bottom: 1rem;
     margin-top: 1rem;
     border-radius: 1rem;
-    text-align: center;
     scrollbar-width: none;
+    text-align: center;
 }
 
 .caseimage_container div {
