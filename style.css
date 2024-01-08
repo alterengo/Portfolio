@@ -96,10 +96,6 @@ small {
     font-size: 0.8rem;
 }
 
-video {
-    border-radius: 1rem;
-}
-
 /* Cases */
 .case {
     margin-top: 3rem;
@@ -130,16 +126,18 @@ video {
     height: 25rem;
     background-size: contain;
     background-repeat: no-repeat;
-    padding-right : 4rem;
+    background-position: center center;
+    min-width: 100%;
+}
+
+.caseimage_container video {
+    border-radius: 1rem;
+    min-width: none;
+    height : 25rem;
 }
 
 .caseimage_container::-webkit-scrollbar {
     display: none;
-}
-
-.caseimage {
-    height: 25rem;
-    width: auto;
 }
 
 .case_description {
@@ -299,6 +297,11 @@ footer .caseimage_container {
 
     nav {
         width : 100%;
+    }
+
+    .caseimage_container div {
+        padding-right : 4rem;
+        background-position: center left;
     }
 
 }
