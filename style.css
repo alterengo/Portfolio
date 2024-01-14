@@ -3,13 +3,26 @@
     src: url(SpaceGrotesk.ttf);
 }
 
-:root {
-    --color-text: #000;
-    --color-background: #fff;
-    --color-background_light: #F7EDE2;
-    --color-primary: #f4f3ee;
-    --color-secondary: #84A59D;
-    --color-accent: #F6BD60;
+@media (prefers-color-scheme: dark) {
+	:root {
+        --color-text: #F7EDE2;
+        --color-background: #000;
+        --color-background_light: #2F413D;
+        --color-primary: #f4f3ee;
+        --color-secondary: #84A59D;
+        --color-accent: #F6BD60;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+        --color-text: #000;
+        --color-background: #fff;
+        --color-background_light: #F7EDE2;
+        --color-primary: #f4f3ee;
+        --color-secondary: #84A59D;
+        --color-accent: #F6BD60;
+	}
 }
 
 /* General Styles */
