@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Inter;
+    font-family: SpaceGrotesk;
     src: url(SpaceGrotesk.ttf);
 }
 
@@ -7,10 +7,8 @@
 	:root {
         --color-text: #F7EDE2;
         --color-background: #000;
-        --color-background_light: #2F413D;
-        --color-primary: #f4f3ee;
-        --color-secondary: #84A59D;
-        --color-accent: #F6BD60;
+        --color-background_top: #2F413D;
+        --color-accent: #84A59D;
 	}
 }
 
@@ -18,17 +16,15 @@
 	:root {
         --color-text: #000;
         --color-background: #fff;
-        --color-background_light: #F7EDE2;
-        --color-primary: #f4f3ee;
-        --color-secondary: #84A59D;
-        --color-accent: #F6BD60;
+        --color-background_top: #F7EDE2;
+        --color-accent: #84A59D;
 	}
 }
 
 /* General Styles */
 body {
     width: 100%;
-    font-family: 'Inter', sans-serif;
+    font-family: 'SpaceGrotesk', sans-serif;
     color: var(--color-text);
     background-color: var(--color-background);
     line-height: 1.6;
@@ -65,7 +61,12 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color : var(--color-secondary);
+    color : var(--color-accent);
+}
+
+small {
+    padding : 0;
+    margin : 0;
 }
 
 h1 {
@@ -83,13 +84,14 @@ h1 {
 h2 {
     font-size: 3rem;
     font-weight: 500;
-    padding-bottom: 0.1rem;
+    padding-bottom: 0rem;
 }
 
 h3 {
     font-size: 1.4rem;
     font-weight: 450;
-    padding-bottom: 0;
+    padding : 0;
+    margin : 0;
 }
 
 .background_pattern {
@@ -99,6 +101,7 @@ h3 {
 
 p {
     padding-top: 0.3rem;
+
 }
 
 b {
@@ -224,7 +227,7 @@ header {
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 
-    background-color: var(--color-background_light);
+    background-color: var(--color-background_top);
 }
 
 .minimal {
@@ -267,7 +270,7 @@ footer .caseimage_container img {
 }
 
 footer .caseimage_container {
-    background-color: var(--color-background_light);
+    background-color: var(--color-background_top);
 }
 
 #handcrafted {
